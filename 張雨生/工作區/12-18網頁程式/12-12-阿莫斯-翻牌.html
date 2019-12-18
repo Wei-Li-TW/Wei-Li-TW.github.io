@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .flip{
+            width: 200px;
+            height: 300px;
+          
+            /* margin: auto; */
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -150px ;
+            
+        }
+        .flip > div{
+            width: 100%;
+            height: 100%;
+            line-height: 300px;
+            position: absolute;
+            top:0;
+            left: 0;
+            transition: 1.5s;
+            text-align: center;
+            font-size: 100px;
+            backface-visibility: hidden;
+            perspective: 300px;
+            transform-style: preserve-3d;
+            border-radius: 10px;
+        }
+        
+        .front{
+            background-color: burlywood;
+            transform: rotateY(0deg);
+        }
+        .back{
+            background-color: cornflowerblue;
+            transform: rotateY(180deg);
+        }
+        /* .f_after{
+            transform: rotateY(180deg);
+        }
+        .b_after{
+            transform: rotateY(0deg);
+        }
+        */
+
+        /* .flip:hover .front{
+            transform: rotateY(180deg);
+        }
+        .flip:hover .back{
+            transform: rotateY(0deg);
+        } */
+        
+
+    </style>
+</head>
+<body>
+    <div class="flip">
+        <div class="front">F</div>
+        <div class="back">B</div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script>
+        // var Front= $(".front").css("transform","rotateY(180deg)")
+        // var Bact= $(".back").css("transform","rotateY(0deg)")
+
+        // $(".front").on("click",function(){
+        //     // clear()
+        //     $(".front").addClass("f_after")
+        //     $(".back").addClass("b_after")
+
+        // })
+
+        function clear(){
+            $(".front").remove("f_after")
+            $(".back").remove("b_after") 
+        }
+        $(".flip").on("click",function(){
+            if(Front){
+
+                $(".front").css("transform","rotateY(0deg);");
+                $(".back").css("transform","rotateY(180deg)");
+            
+            }
+            else{
+                $(".front").css("transform","rotateY(180deg)");
+                 $(".back").css("transform","rotateY(0deg)");
+        }
+       
+        })
+    </script>
+</body>
+</html>

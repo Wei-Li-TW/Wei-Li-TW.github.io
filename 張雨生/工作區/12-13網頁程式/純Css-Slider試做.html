@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+        }
+
+body {
+  
+ 
+  user-select: none;
+}
+
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  width:91.46395833%;
+  height: 544.167px;
+  position: relative;
+  perspective: 500px;
+  /* perspective-origin: center 0%; */
+  transform-style: preserve-3d;
+  top:150px;
+  margin: auto;
+}
+
+#slider label {
+  margin: auto;
+  width: 988.015px;
+  height:544.167px;
+  border-radius: 8px;
+  position: absolute;
+  left:4.27%;
+  right: 4.27%;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+#s1:checked ~ #slide6, #s2:checked ~ #slide7,
+#s3:checked ~ #slide8, #s4:checked ~ #slide9,
+#s5:checked ~ #slide1, #s6:checked ~ #slide2,
+#s7:checked ~ #slide3, #s8:checked ~ #slide4,
+#s9:checked ~ #slide5 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-90%,0,-400px);
+}
+#s1:checked ~ #slide7, #s2:checked ~ #slide8,
+#s3:checked ~ #slide9, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2, #s6:checked ~ #slide3,
+#s7:checked ~ #slide4, #s8:checked ~ #slide5,
+#s9:checked ~ #slide6 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-67.5%,0,-300px);
+}
+#s1:checked ~ #slide8, #s2:checked ~ #slide9,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3, #s6:checked ~ #slide4,
+#s7:checked ~ #slide5, #s8:checked ~ #slide6,
+#s9:checked ~ #slide7 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-45%,0,-200px);
+}
+
+#s1:checked ~ #slide9, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4, #s6:checked ~ #slide5,
+#s7:checked ~ #slide6, #s8:checked ~ #slide7,
+#s9:checked ~ #slide8{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-22.5%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5, #s6:checked ~ #slide6,
+#s7:checked ~ #slide7, #s8:checked ~ #slide8,
+#s9:checked ~ #slide9 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide6, #s6:checked ~ #slide7,
+#s7:checked ~ #slide8, #s8:checked ~ #slide9,
+#s9:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(22.5%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide6,
+#s5:checked ~ #slide7, #s6:checked ~ #slide8,
+#s7:checked ~ #slide9, #s8:checked ~ #slide1,
+#s9:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(45%,0,-200px);
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide6, #s4:checked ~ #slide7,
+#s5:checked ~ #slide8, #s6:checked ~ #slide9,
+#s7:checked ~ #slide1, #s8:checked ~ #slide2,
+#s9:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(67.5%,0,-300px);
+}
+#s1:checked ~ #slide5, #s2:checked ~ #slide6,
+#s3:checked ~ #slide7, #s4:checked ~ #slide8,
+#s5:checked ~ #slide9, #s6:checked ~ #slide1,
+#s7:checked ~ #slide2, #s8:checked ~ #slide3,
+#s9:checked ~ #slide4 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(90%,0,-400px);
+}
+
+#slide1 { 
+    background-image: url("../../素材/專輯照片/大海.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+#slide2 {
+  background-image: url("../../素材/專輯照片/一天到晚游泳的魚.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+#slide3 {
+  
+  background-image: url("../../素材/專輯照片/還是朋友.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+#slide4 { 
+    background-image: url("../../素材/專輯照片/兩伊戰爭-白色才情-紅色熱情.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#slide5 { 
+    background-image: url("../../素材/專輯照片/口是心非專輯.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ }
+ #slide6 { 
+    background-image: url("../../素材/專輯照片/帶我去月球.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ }
+ #slide7 { 
+    background-image: url("../../素材/專輯照片/天天想你專輯.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ }
+ #slide8 { 
+    background-image: url("../../素材/專輯照片/想念我.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+ }
+ #slide9 { 
+  display: flex;
+ }
+ .slide9_image{
+   width:544.167px;
+   height: 100%;
+   background-image: url("../../素材/專輯照片/卡拉ok-台北-我.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .slide9_textBox{
+  width: 374.661px;
+   height:474.167px;
+   background-color: chartreuse;
+   padding: 35px;
+
+   
+ }
+ .slide9_text{
+   width: 374.661px;
+   height:474.167px;
+   background-color: brown;
+ }
+
+ /* .box{
+   width: 50%;
+   height: 600px;
+   background-color: red;
+   position: absolute;
+   top:0
+ } */
+    </style>
+</head>
+<body>
+    <section id="slider">
+        <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3" checked>
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <input type="radio" name="slider" id="s6">
+        <input type="radio" name="slider" id="s7">
+        <input type="radio" name="slider" id="s8">
+        <input type="radio" name="slider" id="s9">
+        <label for="s1" id="slide1"></label>
+        <label for="s2" id="slide2"></label>
+        <label for="s3" id="slide3"></label>
+        <label for="s4" id="slide4"></label>
+        <label for="s5" id="slide5"></label>
+        <label for="s6" id="slide6"></label>
+        <label for="s7" id="slide7"></label>
+        <label for="s8" id="slide8"></label>
+        <label for="s9" id="slide9">
+          <div class="slide9_image"></div>
+          <div class="slide9_textBox">
+            <div class="slide9_text">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </label>
+      </section>
+    
+</body>
+
+</html>

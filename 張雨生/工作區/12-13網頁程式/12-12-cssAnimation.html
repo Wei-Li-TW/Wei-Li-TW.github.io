@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        .page-1-back,
+        .page-2-back {
+            transform: scale(-1, 1);
+           
+        }
+        .page-1,
+        .page-2 {
+            z-index: 1;
+            }
+            @keyframes flip-to-left {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+.paper[data-right] {
+    transform-origin: left center;
+    animation: flip-to-left 2s ease-in-out;
+}
+
+
+    </style>
+</head>
+<body>
+    <ul class="pages">
+        <!--一个li.paper包含了正反两页-->
+        <li class="paper data-left">
+            <!--一个.page就是一页内容-->
+            <div class="page page-1-back">
+                    <img src="../../素材/專輯照片/大海專輯.jpg" alt>
+                </div>
+            <div class="page page-1">
+                <img src="../../素材/專輯照片/想念我.jpg" alt>
+            </div>
+        </li>
+        <li class="paper data-right">
+            <div class="page page-2">
+                <img src="../../素材/專輯照片/口是心非專輯.jpg" alt>
+            </div>
+            <div class="page page-2-back">
+                <img src="../../素材/專輯照片/天天想你專輯.jpg" alt>
+            </div>
+        </li>
+      
+    </ul>
+    
+            
+    </div>
+</body>
+</html>

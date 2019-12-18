@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+      }
+      .containter{
+        width: 1140px;
+      }
+        .Navbar{
+            width: 100%;
+            height: 8vh;
+            background-color:aqua;
+            position: fixed;
+            top:0;
+            z-index: 99;
+
+        }
+
+        .Navbar_1{
+           margin-left: 960px;
+        }
+        .Justify{
+          margin-right:-390px;
+          padding-left: 390px;
+           
+        }
+        .test{
+            width: 1140px;
+            height: 200vh;
+            margin: auto;
+            background-color: red;
+        }
+        .box{
+          background-attachment: fixed;
+          width: 1250px;
+          margin: auto;
+        }
+        .banner_img{
+          width: 1140px;
+        }
+        .img1{
+          object-position: center;
+        }
+        .swiper-container {
+          
+        height: 630px;
+       
+        top:8vh;
+        margin-bottom: 200px;
+        
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+         }
+      </style>
+</head>
+<body>
+      <ul class="nav nav-pills Navbar align-items-center ">
+            <div class="Justify">
+            <img src="../../素材/張雨生Q版-改過.jpg" alt="">
+            <span>音樂魔術師</span>
+            </div>
+              <li class="nav-item">
+                  <a class="nav-link dropdown-toggle Navbar_1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">關於張雨生</a>
+                  <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">生平簡介</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">生平編年史</a>
+        
+                      </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle Navbar_2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">家人</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">家人</a>
+                   
+                  </div>
+              </li>
+              <li class="nav-item">
+                        <a class="nav-link dropdown-toggle Navbar_3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">作品</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">電影</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">專輯-自我創作</a>
+                          <a class="dropdown-item" href="#">專輯-遺作與後人追思</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">舞台劇與音樂劇</a>
+              </li>
+              <li class="nav-item">
+                        <a class="nav-link dropdown-toggle Navbar_4" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">影響與評價</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">帶動社會風氣改變</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">百年難得的男高音</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">獨樹一格的創作風格</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">音樂劇經典</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">提攜與影響後輩</a>
+                        </div>
+              </li>
+              </ul>
+              <div class="box">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../../素材/張雨生1.jpg" alt="" class="banner_img "> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../素材/banner選擇1.jpg" alt="" class="banner_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../素材/banner選擇2.png" alt=" " class="banner_img">
+                    </div>
+                   
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+                <div class="test">
+
+                </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+       var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      speed:2000,
+     
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+     
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      
+      },
+    });
+    </script>
+</body>
+</html>
